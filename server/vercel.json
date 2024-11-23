@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "api/**/*.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      { "src": "/api/create", "dest": "/api/create.js" },
+      { "src": "/api/employees", "dest": "/api/employees.js" },
+      { "src": "/api/update", "dest": "/api/update.js" },
+      { "src": "/api/delete", "dest": "/api/delete.js" }
+    ]
+  }
+  
